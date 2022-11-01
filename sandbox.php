@@ -112,7 +112,7 @@
         echo nl2br("\n\n");
       }
 
-      #Mathematical Operators#
+      #Mathematical operators#
 
       $a = 10; $b = 20; $c = 47.71; $d = 21.21;
 
@@ -122,6 +122,84 @@
       echo('++a = '.++$a.'<br>');
       echo('--b = '.--$b.'<br>');
 
+      echo nl2br ("\n");
+
+      #Logical operators#
+
+      #AND#
+      echo("boolean operators<br><br>");
+      echo("and:<br><br>");
+      $x = true; $y = false;
+      $test1 = ($x && $x)? "true" : "false";
+      echo('true + true = '.$test1.'<br>');
+      $test2 = ($x && $y)? "true" : "false";
+      echo('true + false = '.$test2.'<br>');
+      $test3 = ($y && $y)? "true" : "false";
+      echo('false + false = '.$test3.'<br><br>');
+
+      #OR#
+      echo("or:<br><br>");
+      $test4 = ($x || $x)? "true" : "false";
+      echo('true + true = '.$test4.'<br>');
+      $test5 = ($x || $y)? "true" : "false";
+      echo('true + false = '.$test5.'<br>');
+      $test6 = ($y || $y)? "true" : "false";
+      echo('false + false = '.$test6.'<br><br>');
+
+      #NOT#
+      echo("not:<br><br>");
+      $test7 = (! $x)? "true" : "false";
+      echo('not true = '.$test7.'<br>');
+      $test8 = (! $y)? "true" : "false";
+      echo('not false = '.$test8.'<br><br>');
+
+      #XOR#
+      echo("xor:<br><br>");
+      $test9 = ($x ^ $x)? "true" : "false";
+      echo('true + true = '.$test9.'<br>');
+      $test10 = ($x ^ $y)? "true" : "false";
+      echo('true + false = '.$test10.'<br>');
+      $test11 = ($y ^ $y)? "true" : "false";
+      echo('false + false = '.$test11.'<br><br>');
+
+      #Assignment operators#
+
+      #Concatenation#
+      $a = "Harvey ";
+      $aa = "MacLeary";
+      $a .= $aa;
+      echo($a);
+
+      echo nl2br("\n\n");
+
+      #Addition#
+      $b = 4;
+      $bb = 6;
+      $b += $bb;
+      echo($b);
+
+      echo nl2br("\n\n");
+
+      $c = 7.5;
+      $cc = 2.25;
+      $c -= $cc;
+      echo($c);
+      
+      echo nl2br("\n\nTASK: \n\n");
+
+      #TASK#
+      $var1 = 10; $var2 = 20;
+      $test = ($var1 != $var2)? "true" : "false";
+      echo("test for inequality<br>10 != 20: ".$test."<br><br>");
+      $var1 = true; $var2 = true;
+      $test = ($var1 === $var2)? "true" : "false";
+      echo("test for equality<br>true === true: ".$test."<br><br>");
+      $var1 = 5; $var2 = 3;
+      $test = ($var1 < $var2)? "true" : "false";
+      echo("test for less than<br>5 < 3: ".$test."<br><br>");
+      $var1 = 5; $var2 = 3;
+      $test = ($var1 > $var2)? "true" : "false";
+      echo("test for greater than<br>5 < 3: ".$test."<br><br>");
     ?>
   </body>
 </html>
